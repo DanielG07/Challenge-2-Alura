@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Juego ahorcado</title>
+</head>
+<body>
+    <header>
+        <h1>Juego ahorcado</h1>
+    </header>
+
+    <main>
+        <section class="mitad">
+            <canvas width="600" height="400"></canvas>
+        </section>
+
+        <section class="mitad">
+            <section class="area">
+                <h2 id="mensaje-final"></h2>
+                <span id="palabra-adivinar"></span>
+                <span id="letras"></span>
+                <div>
+                    <button id="iniciar">Juego Nuevo</button>
+                </div>
+                
+            </section>
+
+            <section class="area">
+                <h2>Palabras nuevas</h2>
+                <div class="mensaje">
+                    <label for="mensaje-texto"></label>
+                    <textarea type="text" name="mensaje" id="mensaje-entrada" placeholder="Ingrese una palabra nueva"></textarea>
+                </div>
+                <div>
+                    <button id="agregar-palabra">Agregar palabra</button>
+                </div>
+                
+            </section>
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/juego.js"></script>
+    <script src="js/dibujo.js"></script>
+</body>
+</html>
